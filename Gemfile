@@ -69,3 +69,6 @@ gem 'sorbet-runtime'
 gem 'tapioca', require: false, :group => [:development, :test]
 
 gem "pg", "~> 1.5"
+
+gem "tailwindcss-ruby", "~> 4.0"
+gem "tailwindcss-rails", "~> 4.1"

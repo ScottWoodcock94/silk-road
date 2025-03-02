@@ -35,3 +35,5 @@
 
 # # Ignore sorbet
 # /sorbet/*
+/app/assets/builds/*
+!/app/assets/builds/.keep
