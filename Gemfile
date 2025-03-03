@@ -72,3 +72,5 @@ gem "pg", "~> 1.5"
 
 gem "tailwindcss-ruby", "~> 4.0"
 gem "tailwindcss-rails", "~> 4.1"
+
+gem "redis", "~> 5.4"
