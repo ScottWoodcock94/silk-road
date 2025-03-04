@@ -1,0 +1,9 @@
+class CreateFavourites < ActiveRecord::Migration[8.0]
+  def change
+    create_table :favourites do |t|
+      t.string :title, null: false
+
+      t.timestamps
+    end
+  end
+end
