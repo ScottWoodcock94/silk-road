@@ -64,9 +64,9 @@ end
 
 ###
 
-gem 'sorbet', :group => :development
-gem 'sorbet-runtime'
-gem 'tapioca', require: false, :group => [:development, :test]
+gem "sorbet", group: :development
+gem "sorbet-runtime"
+gem "tapioca", require: false, group: [ :development, :test ]
 
 gem "pg", "~> 1.5"
 
