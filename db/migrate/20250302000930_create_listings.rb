@@ -14,6 +14,7 @@ class CreateListings < ActiveRecord::Migration[8.0]
       t.integer :views, null: false, default: 0
       t.integer :purchases, null: false, default: 0
       t.boolean :active, null: false, default: false
+      t.integer :user_id, null: false
 
       t.timestamps
     end
