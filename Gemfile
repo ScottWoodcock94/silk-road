@@ -74,3 +74,7 @@ gem "tailwindcss-ruby", "~> 4.0"
 gem "tailwindcss-rails", "~> 4.1"
 
 gem "redis", "~> 5.4"
+
+gem "ruby-lsp", "~> 0.23.11"
+
+gem "ruby-lsp-rails", "~> 0.4.0"
