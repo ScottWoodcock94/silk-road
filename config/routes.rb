@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get "user/index"
+  get "user/new"
+  get "user/create"
+  get "user/show"
+  get "user/edit"
+  get "user/update"
+  get "user/destroy"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -11,4 +18,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+
+  # User routes
+  get "users", to: "user#index"
+  get "user/new", to: "user#new"
+  post "/users", to: "user#create"
+  get "/users:id", to: "user#show"
+  get "/users/:id/edit", to: "user#edit"
+  put "/users:id", to: "user#update"
+  delete "/users:id", to: "user#destroy"
 end
