@@ -46,7 +46,7 @@ ActiveRecord::Schema[8.0].define(version: 15) do
     t.integer "price", null: false
     t.integer "currency", default: 0, null: false
     t.integer "quantity", default: 1, null: false
-    t.datetime "listing_date", default: "2025-03-14 14:55:47", null: false
+    t.datetime "listing_date", default: "2025-03-14 15:17:27", null: false
     t.datetime "expiration_date", null: false
     t.boolean "persistent", default: false, null: false
     t.integer "views", default: 0, null: false
@@ -60,7 +60,7 @@ ActiveRecord::Schema[8.0].define(version: 15) do
   create_table "messages", force: :cascade do |t|
     t.string "subject"
     t.string "content", null: false
-    t.datetime "datetime", default: "2025-03-14 14:55:47", null: false
+    t.datetime "datetime", default: "2025-03-14 15:17:27", null: false
     t.boolean "draft", default: true, null: false
     t.boolean "sent", default: false, null: false
     t.boolean "received", default: false, null: false
@@ -75,7 +75,7 @@ ActiveRecord::Schema[8.0].define(version: 15) do
     t.integer "user_id", null: false
     t.integer "listing_id", null: false
     t.integer "quantity", default: 1, null: false
-    t.datetime "datetime", default: "2025-03-14 14:55:47", null: false
+    t.datetime "datetime", default: "2025-03-14 15:17:27", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -85,7 +85,7 @@ ActiveRecord::Schema[8.0].define(version: 15) do
     t.integer "author_id", null: false
     t.string "content", null: false
     t.boolean "approved", default: false, null: false
-    t.datetime "datetime", default: "2025-03-14 14:55:47", null: false
+    t.datetime "datetime", default: "2025-03-14 15:17:27", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -98,7 +98,7 @@ ActiveRecord::Schema[8.0].define(version: 15) do
     t.integer "rating"
     t.integer "response_id"
     t.boolean "approved", default: false, null: false
-    t.datetime "datetime", default: "2025-03-14 14:55:47", null: false
+    t.datetime "datetime", default: "2025-03-14 15:17:27", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -110,8 +110,8 @@ ActiveRecord::Schema[8.0].define(version: 15) do
     t.string "remember_token"
     t.integer "role", default: 1, null: false
     t.integer "rating", default: 0, null: false
-    t.boolean "registered", default: false, null: false
-    t.datetime "registration_date", precision: nil, default: "2025-03-14 14:55:47", null: false
+    t.boolean "registered", default: false
+    t.datetime "registration_date", precision: nil, default: "2025-03-14 15:17:27", null: false
     t.boolean "subscribed", default: false, null: false
     t.boolean "active", default: false, null: false
     t.boolean "deactivated", default: false, null: false

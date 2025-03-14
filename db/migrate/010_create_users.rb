@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[8.0]
       t.string :remember_token
       t.integer :role, default: 1, null: false
       t.integer :rating, default: 0, null: false
-      t.boolean :registered, default: false, null: false
+      t.boolean :registered, default: false, null: true
       t.timestamp :registration_date, default: DateTime.now(), null: false
       t.boolean :subscribed, default: false, null: false
       t.boolean :active, default: false, null: false
