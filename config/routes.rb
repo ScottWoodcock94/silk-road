@@ -23,8 +23,8 @@ Rails.application.routes.draw do
   get "users", to: "user#index"
   get "user/new", to: "user#new"
   post "/users", to: "user#create"
-  get "/users:id", to: "user#show"
+  get "/users/:id", to: "user#show"
   get "/users/:id/edit", to: "user#edit"
-  put "/users:id", to: "user#update"
-  delete "/users:id", to: "user#destroy"
+  put "/users/:id", to: "user#update"
+  delete "/users/:id", to: "user#destroy"
 end
