@@ -8,7 +8,7 @@ class CreateListings < ActiveRecord::Migration[8.0]
       t.integer :price, null: false
       t.integer :currency, null: false, default: 0
       t.integer :quantity, null: false, default: 1
-      t.datetime :listing_date, null: false, default: DateTime.now
+      t.datetime :listing_date, null: false # , default: -> { 'CURRENT_TIMESTAMP' }
       t.datetime :expiration_date, null: false
       t.boolean :persistent, null: false, default: false
       t.integer :views, null: false, default: 0

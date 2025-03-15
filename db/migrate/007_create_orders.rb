@@ -5,7 +5,7 @@ class CreateOrders < ActiveRecord::Migration[8.0]
       # t.integer :listing_id, null: false
       # t.integer :quantity, null: false, default: 1
       t.integer :total, null: false
-      t.datetime :datetime, null: false, default: DateTime.now
+      t.datetime :datetime, null: false, default: -> { 'CURRENT_TIMESTAMP' }
 
       t.timestamps
     end

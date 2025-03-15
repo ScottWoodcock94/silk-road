@@ -3,7 +3,7 @@ class CreateMessages < ActiveRecord::Migration[8.0]
     create_table :messages do |t|
       t.string :subject
       t.string :content, null: false
-      t.datetime :datetime, null: false, default: DateTime.now
+      t.datetime :datetime, null: false, default: -> { 'CURRENT_TIMESTAMP' }
       t.boolean :draft, null: false, default: true
       t.boolean :sent, null: false, default: false
       t.boolean :received, null: false, default: false

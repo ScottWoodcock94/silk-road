@@ -8,7 +8,7 @@ class CreateReviews < ActiveRecord::Migration[8.0]
       t.integer :rating
       t.integer :response_id
       t.boolean :approved, default: false, null: false
-      t.datetime :datetime, null: false, default: DateTime.now
+      t.datetime :datetime, null: false, default: -> { 'CURRENT_TIMESTAMP' }
 
       t.timestamps
     end

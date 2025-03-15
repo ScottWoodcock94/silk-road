@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration[8.0]
       t.integer :role, default: 1, null: false
       t.integer :rating, default: 0, null: false
       t.boolean :registered, default: false, null: false
-      t.timestamp :registration_date, default: DateTime.now(), null: true
+      t.datetime :registration_date, default: -> { 'CURRENT_TIMESTAMP' }, null: true
       t.boolean :subscribed, default: false, null: false
       t.boolean :active, default: false, null: false
       t.boolean :deactivated, default: false, null: false
