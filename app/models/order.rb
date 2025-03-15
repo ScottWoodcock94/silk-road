@@ -1,4 +1,4 @@
 class Order < ApplicationRecord
-  has_one :listing
+  has_and_belongs_to_many :listings
   has_one :user
 end
