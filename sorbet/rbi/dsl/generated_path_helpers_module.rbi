@@ -10,10 +10,40 @@ module GeneratedPathHelpersModule
   include ::ActionDispatch::Routing::PolymorphicRoutes
 
   sig { params(args: T.untyped).returns(String) }
+  def categories_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def categories_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def favourites_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def favourites_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def listings_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def listings_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def messages_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def messages_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
   def new_rails_conductor_inbound_email_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def new_rails_conductor_inbound_email_source_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def orders_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def orders_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def rails_blob_path(*args); end
@@ -97,6 +127,18 @@ module GeneratedPathHelpersModule
   def rails_storage_redirect_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
+  def review_responses_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def review_responses_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def reviews_new_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def reviews_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
   def root_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
@@ -131,6 +173,9 @@ module GeneratedPathHelpersModule
 
   sig { params(args: T.untyped).returns(String) }
   def user_update_path(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def users_new_path(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def users_path(*args); end

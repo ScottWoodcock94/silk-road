@@ -10,10 +10,40 @@ module GeneratedUrlHelpersModule
   include ::ActionDispatch::Routing::PolymorphicRoutes
 
   sig { params(args: T.untyped).returns(String) }
+  def categories_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def categories_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def favourites_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def favourites_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def listings_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def listings_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def messages_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def messages_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
   def new_rails_conductor_inbound_email_source_url(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def new_rails_conductor_inbound_email_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def orders_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def orders_url(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def rails_blob_representation_proxy_url(*args); end
@@ -97,6 +127,18 @@ module GeneratedUrlHelpersModule
   def rails_storage_redirect_url(*args); end
 
   sig { params(args: T.untyped).returns(String) }
+  def review_responses_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def review_responses_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def reviews_new_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def reviews_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
   def root_url(*args); end
 
   sig { params(args: T.untyped).returns(String) }
@@ -131,6 +173,9 @@ module GeneratedUrlHelpersModule
 
   sig { params(args: T.untyped).returns(String) }
   def user_update_url(*args); end
+
+  sig { params(args: T.untyped).returns(String) }
+  def users_new_url(*args); end
 
   sig { params(args: T.untyped).returns(String) }
   def users_url(*args); end
